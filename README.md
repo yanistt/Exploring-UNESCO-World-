@@ -21,6 +21,14 @@ This file contains the RDF data for UNESCO World Heritage Sites, including:
 - **Location**: The geographic coordinates of the site in WKT format.
 
 ---
+### 3. `cleaned-enriched-cities.ttl`
+This file is the **enriched knowledge graph** constructed by linking `cities.ttl` to **Wikidata** and adding the official language of each city. It includes:
+- All data from `cities.ttl`.
+- **Language**: The official language spoken in the city (retrieved from Wikidata).
+
+#### Notes:
+- Not all cities in Wikidata have the **official language** property (`P37`), so some cities from the original dataset could not be enriched with language data and were excluded.
+- For **logistical reasons** (memory, storage space, and processing time), the number of cities in the dataset was further reduced, retaining only those with complete data (name, population, location, and language).
 
 ## How to Use This Repository
 
