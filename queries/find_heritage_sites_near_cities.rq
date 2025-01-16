@@ -1,0 +1,30 @@
+PREFIX base: <http://example.com/base/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+
+SELECT ?cityName ?cityPopulation ?heritageSiteName ?heritageSiteLocation ?language ?cityLat ?cityLon ?siteLat ?siteLon WHERE {
+  # Retrieve city data from your enriched graph
+  ?city base:CityName ?cityName ;
+        base:Population ?cityPopulation ;
+        base:Location ?cityLocation ;
+        base:Language ?language .
+
+  # Extract latitude and longitude for the city
+  BIND(STRBEFORE(STRAFTER(STR(?cityLocation), "("), " ") AS ?cityLon)
+  BIND(STRAFTER(STRAFTER(STR(?cityLocation), "("), " ") AS ?cityLat)
+  BIND(REPLACE(?cityLat, ")", "") AS ?cityLat)
+
+  # Retrieve UNESCO World Heritage Sites from your enriched graph
+  ?heritageSite base:HeritageSiteName ?heritageSiteName ;
+                base:Location ?heritageSiteLocation .
+
+  # Extract latitude and longitude for the heritage site
+  BIND(STRBEFORE(STRAFTER(STR(?heritageSiteLocation), "("), " ") AS ?siteLon)
+  BIND(STRAFTER(STRAFTER(STR(?heritageSiteLocation), "("), " ") AS ?siteLat)
+  BIND(REPLACE(?siteLat, ")", "") AS ?siteLat)
+
+  # Calculate the distance between the city and the heritage site (in kilometers)
+  BIND(geof:distance(?cityLocation, ?heritageSiteLocation) AS ?distance)
+  FILTER(?distance <= 50)  # Filter for sites within 50 km
+}
+

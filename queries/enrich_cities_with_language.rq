@@ -1,0 +1,29 @@
+PREFIX base: <http://example.com/base/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+
+CONSTRUCT {
+  ?city base:CityName ?CityName .
+  ?city base:Population ?Population .
+  ?city base:Location ?Location .
+  ?city base:Language ?Language .
+}
+WHERE {
+  SERVICE <http://localhost:7333/repositories/ontorefine:1758731059719> {
+    BIND( ?c_CityName AS ?CityName ) .
+    BIND( ?c_Population AS ?Population ) .
+    BIND( ?c_Location AS ?Location ) .
+  }
+
+  # Query Wikidata to get the official language of the city
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?city_wd rdfs:label ?CityName .
+    ?city_wd wdt:P37 ?language_wd .  # P37 is the property for "official language"
+    ?language_wd rdfs:label ?Language .
+    FILTER(LANG(?Language) = "en")  # Filter to get the English label of the language
+  }
+
+  BIND(URI(CONCAT("http://example.com/base/", ENCODE_FOR_URI(?CityName))) AS ?city)
+}
