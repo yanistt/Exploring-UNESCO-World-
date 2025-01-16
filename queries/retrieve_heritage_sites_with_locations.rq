@@ -1,0 +1,5 @@
+SELECT ?site ?siteLabel ?location WHERE {
+  ?site wdt:P31 wd:Q9259;   # Heritage site instance
+        wdt:P625 ?location.  # Geographical coordinates
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
