@@ -1,0 +1,862 @@
+@base <http://example.com/base/> .
+@prefix ex: <http://example.com/base/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Dubai a ex:City;
+  geo:hasGeometry "POINT(25.07725 55.30927)";
+  ex:population "2956587";
+  ex:speaks "Arabic" .
+
+ex:Kabul a ex:City;
+  geo:hasGeometry "POINT(34.52813 69.17233)";
+  ex:population "3043532";
+  ex:speaks "Uzbek" .
+
+ex:Luanda a ex:City;
+  geo:hasGeometry "POINT(-8.83682 13.23432)";
+  ex:population "2776168" .
+
+ex:Buenos%20Aires a ex:City;
+  geo:hasGeometry "POINT(-34.61315 -58.37723)";
+  ex:population "13076300" .
+
+ex:Vienna a ex:City;
+  geo:hasGeometry "POINT(48.20849 16.37208)";
+  ex:population "1691468" .
+
+ex:Perth a ex:City;
+  geo:hasGeometry "POINT(-31.95224 115.8614)";
+  ex:population "1896548" .
+
+ex:Sydney a ex:City;
+  geo:hasGeometry "POINT(-33.86785 151.20732)";
+  ex:population "4627345" .
+
+ex:Melbourne a ex:City;
+  geo:hasGeometry "POINT(-37.814 144.96332)";
+  ex:population "4246375";
+  ex:speaks "Australian English" .
+
+ex:Brisbane a ex:City;
+  geo:hasGeometry "POINT(-27.46794 153.02809)";
+  ex:population "2189878" .
+
+ex:Dhaka a ex:City;
+  geo:hasGeometry "POINT(23.7104 90.40744)";
+  ex:population "10356500";
+  ex:speaks "Bangla" .
+
+ex:Chittagong a ex:City;
+  geo:hasGeometry "POINT(22.3384 91.83168)";
+  ex:population "3920222";
+  ex:speaks "Bangla" .
+
+ex:Fortaleza a ex:City;
+  geo:hasGeometry "POINT(-3.71722 -38.54306)";
+  ex:population "2400000" .
+
+ex:Sao%20Paulo a ex:City;
+  geo:hasGeometry "POINT(-23.5475 -46.63611)";
+  ex:population "10021295" .
+
+ex:Salvador a ex:City;
+  geo:hasGeometry "POINT(-12.97111 -38.51083)";
+  ex:population "2711840" .
+
+ex:Rio%20de%20Janeiro a ex:City;
+  geo:hasGeometry "POINT(-22.90642 -43.18223)";
+  ex:population "6023699" .
+
+ex:Curitiba a ex:City;
+  geo:hasGeometry "POINT(-25.42778 -49.27306)";
+  ex:population "1718421" .
+
+ex:Brasilia a ex:City;
+  geo:hasGeometry "POINT(-15.77972 -47.92972)";
+  ex:population "2207718" .
+
+ex:Belo%20Horizonte a ex:City;
+  geo:hasGeometry "POINT(-19.92083 -43.93778)";
+  ex:population "2373224" .
+
+ex:Manaus a ex:City;
+  geo:hasGeometry "POINT(-3.10194 -60.025)";
+  ex:population "1598210" .
+
+ex:Minsk a ex:City;
+  geo:hasGeometry "POINT(53.9 27.56667)";
+  ex:population "1742124";
+  ex:speaks "Russian" .
+
+ex:Montreal a ex:City;
+  geo:hasGeometry "POINT(45.50884 -73.58781)";
+  ex:population "1600000" .
+
+ex:Toronto a ex:City;
+  geo:hasGeometry "POINT(43.70011 -79.4163)";
+  ex:population "2600000" .
+
+ex:Kinshasa a ex:City;
+  geo:hasGeometry "POINT(-4.32758 15.31357)";
+  ex:population "7785965";
+  ex:speaks "French" .
+
+ex:Abidjan a ex:City;
+  geo:hasGeometry "POINT(5.35444 -4.00167)";
+  ex:population "3677115" .
+
+ex:Santiago a ex:City;
+  geo:hasGeometry "POINT(-33.45694 -70.64827)";
+  ex:population "4837295" .
+
+ex:Urumqi a ex:City;
+  geo:hasGeometry "POINT(43.80096 87.60046)";
+  ex:population "3029372" .
+
+ex:Zhengzhou a ex:City;
+  geo:hasGeometry "POINT(34.75778 113.64861)";
+  ex:population "4253913" .
+
+ex:Zibo a ex:City;
+  geo:hasGeometry "POINT(36.79056 118.06333)";
+  ex:population "3129228" .
+
+ex:Kunshan a ex:City;
+  geo:hasGeometry "POINT(31.37762 120.95431)";
+  ex:population "1600000" .
+
+ex:Yunfu a ex:City;
+  geo:hasGeometry "POINT(22.92833 112.03954)";
+  ex:population "2612800" .
+
+ex:Xinyang a ex:City;
+  geo:hasGeometry "POINT(32.12278 114.06556)";
+  ex:population "1590668";
+  ex:speaks "Chinese" .
+
+ex:Xi%27an a ex:City;
+  geo:hasGeometry "POINT(34.25833 108.92861)";
+  ex:population "6501190" .
+
+ex:Xiamen a ex:City;
+  geo:hasGeometry "POINT(24.47979 118.08187)";
+  ex:population "3531347" .
+
+ex:Wuxi a ex:City;
+  geo:hasGeometry "POINT(31.56887 120.28857)";
+  ex:population "3543719" .
+
+ex:Wuhan a ex:City;
+  geo:hasGeometry "POINT(30.58333 114.26667)";
+  ex:population "9785388" .
+
+ex:Tianshui a ex:City;
+  geo:hasGeometry "POINT(34.57952 105.74238)";
+  ex:population "3500000" .
+
+ex:Tianjin a ex:City;
+  geo:hasGeometry "POINT(39.14222 117.17667)";
+  ex:population "11090314" .
+
+ex:Tangshan a ex:City;
+  geo:hasGeometry "POINT(39.63333 118.18333)";
+  ex:population "3372102" .
+
+ex:Taiyuan a ex:City;
+  geo:hasGeometry "POINT(37.86944 112.56028)";
+  ex:population "3426519" .
+
+ex:Tai%27an a ex:City;
+  geo:hasGeometry "POINT(36.18528 117.12)";
+  ex:population "5499000" .
+
+ex:Shiyan a ex:City;
+  geo:hasGeometry "POINT(32.6475 110.77806)";
+  ex:population "3460000" .
+
+ex:Shijiazhuang a ex:City;
+  geo:hasGeometry "POINT(38.04139 114.47861)";
+  ex:population "2834942" .
+
+ex:Shenzhen a ex:City;
+  geo:hasGeometry "POINT(22.54554 114.0683)";
+  ex:population "10358381";
+  ex:speaks "Chinese" .
+
+ex:Shantou a ex:City;
+  geo:hasGeometry "POINT(23.36814 116.71479)";
+  ex:population "5329024" .
+
+ex:Shanghai a ex:City;
+  geo:hasGeometry "POINT(31.22222 121.45806)";
+  ex:population "22315474" .
+
+ex:Qingdao a ex:City;
+  geo:hasGeometry "POINT(36.06488 120.38042)";
+  ex:population "3718835" .
+
+ex:Puyang a ex:City;
+  geo:hasGeometry "POINT(29.45679 119.88872)";
+  ex:population "3590000" .
+
+ex:Ningbo a ex:City;
+  geo:hasGeometry "POINT(29.87819 121.54945)";
+  ex:population "3491597";
+  ex:speaks "Standard Chinese" .
+
+ex:Nanjing a ex:City;
+  geo:hasGeometry "POINT(32.06167 118.77778)";
+  ex:population "7165292" .
+
+ex:Nanchong a ex:City;
+  geo:hasGeometry "POINT(30.79508 106.08473)";
+  ex:population "7150000" .
+
+ex:Nanchang a ex:City;
+  geo:hasGeometry "POINT(28.68396 115.85306)";
+  ex:population "2357839" .
+
+ex:Lanzhou a ex:City;
+  geo:hasGeometry "POINT(36.05701 103.83987)";
+  ex:population "2628426" .
+
+ex:Kunming a ex:City;
+  geo:hasGeometry "POINT(25.03889 102.71833)";
+  ex:population "3855346" .
+
+ex:Jinan a ex:City;
+  geo:hasGeometry "POINT(36.66833 116.99722)";
+  ex:population "4335989" .
+
+ex:Hefei a ex:City;
+  geo:hasGeometry "POINT(31.86389 117.28083)";
+  ex:population "3310268" .
+
+ex:Hangzhou a ex:City;
+  geo:hasGeometry "POINT(30.29365 120.16142)";
+  ex:population "6241971" .
+
+ex:Guangzhou a ex:City;
+  geo:hasGeometry "POINT(23.11667 113.25)";
+  ex:population "11071424" .
+
+ex:Foshan a ex:City;
+  geo:hasGeometry "POINT(23.02677 113.13148)";
+  ex:population "3600000" .
+
+ex:Dongguan a ex:City;
+  geo:hasGeometry "POINT(23.01797 113.74866)";
+  ex:population "8000000" .
+
+ex:Dalian a ex:City;
+  geo:hasGeometry "POINT(38.91222 121.60222)";
+  ex:population "4087733" .
+
+ex:Chongqing a ex:City;
+  geo:hasGeometry "POINT(29.56278 106.55278)";
+  ex:population "7457600" .
+
+ex:Chengdu a ex:City;
+  geo:hasGeometry "POINT(30.66667 104.06667)";
+  ex:population "7415590" .
+
+ex:Changsha a ex:City;
+  geo:hasGeometry "POINT(28.19874 112.97087)";
+  ex:population "3093980" .
+
+ex:Beijing a ex:City;
+  geo:hasGeometry "POINT(39.9075 116.39723)";
+  ex:population "11716620";
+  ex:speaks "Chinese" .
+
+ex:Suzhou a ex:City;
+  geo:hasGeometry "POINT(31.30408 120.59538)";
+  ex:population "5345961" .
+
+ex:Zhongshan a ex:City;
+  geo:hasGeometry "POINT(21.31992 110.5723)";
+  ex:population "3121275" .
+
+ex:Dadonghai a ex:City;
+  geo:hasGeometry "POINT(18.22056 109.51028)";
+  ex:population "2000000" .
+
+ex:Shenyang a ex:City;
+  geo:hasGeometry "POINT(41.79222 123.43278)";
+  ex:population "6255921" .
+
+ex:Jilin a ex:City;
+  geo:hasGeometry "POINT(43.85083 126.56028)";
+  ex:population "1881977" .
+
+ex:Harbin a ex:City;
+  geo:hasGeometry "POINT(45.75 126.65)";
+  ex:population "5878939" .
+
+ex:Changchun a ex:City;
+  geo:hasGeometry "POINT(43.88 125.32278)";
+  ex:population "4193073" .
+
+ex:Ordos a ex:City;
+  geo:hasGeometry "POINT(39.6086 109.78157)";
+  ex:population "1940653" .
+
+ex:Bayan%20Nur a ex:City;
+  geo:hasGeometry "POINT(40.74143 107.38599)";
+  ex:population "1760000" .
+
+ex:Medellin a ex:City;
+  geo:hasGeometry "POINT(6.25184 -75.56359)";
+  ex:population "1999979" .
+
+ex:Cali a ex:City;
+  geo:hasGeometry "POINT(3.43722 -76.5225)";
+  ex:population "2392877" .
+
+ex:Bogota a ex:City;
+  geo:hasGeometry "POINT(4.60971 -74.08175)";
+  ex:population "7674366" .
+
+ex:Havana a ex:City;
+  geo:hasGeometry "POINT(23.13302 -82.38304)";
+  ex:population "2163824" .
+
+ex:Hamburg a ex:City;
+  geo:hasGeometry "POINT(53.55073 9.99302)";
+  ex:population "1739117" .
+
+ex:Berlin a ex:City;
+  geo:hasGeometry "POINT(52.52437 13.41053)";
+  ex:population "3426354";
+  ex:speaks "German" .
+
+ex:Santo%20Domingo a ex:City;
+  geo:hasGeometry "POINT(18.47186 -69.89232)";
+  ex:population "2201941" .
+
+ex:Algiers a ex:City;
+  geo:hasGeometry "POINT(36.73225 3.08746)";
+  ex:population "1977663";
+  ex:speaks "Arabic" .
+
+ex:Guayaquil a ex:City;
+  geo:hasGeometry "POINT(-2.19616 -79.88621)";
+  ex:population "1952029";
+  ex:speaks "Spanish" .
+
+ex:Cairo a ex:City;
+  geo:hasGeometry "POINT(30.06263 31.24967)";
+  ex:population "7734614";
+  ex:speaks "Arabic" .
+
+ex:Giza a ex:City;
+  geo:hasGeometry "POINT(30.00944 31.20861)";
+  ex:population "2443203" .
+
+ex:Alexandria a ex:City;
+  geo:hasGeometry "POINT(31.20176 29.91582)";
+  ex:population "3811516";
+  ex:speaks "Arabic" .
+
+ex:Madrid a ex:City;
+  geo:hasGeometry "POINT(40.4165 -3.70256)";
+  ex:population "3255944" .
+
+ex:Barcelona a ex:City;
+  geo:hasGeometry "POINT(41.38879 2.15899)";
+  ex:population "1621537";
+  ex:speaks "Spanish" .
+
+ex:Addis%20Ababa a ex:City;
+  geo:hasGeometry "POINT(9.02497 38.74689)";
+  ex:population "2757729" .
+
+ex:Paris a ex:City;
+  geo:hasGeometry "POINT(48.85341 2.3488)";
+  ex:population "2138551";
+  ex:speaks "French" .
+
+ex:London a ex:City;
+  geo:hasGeometry "POINT(51.50853 -0.12574)";
+  ex:population "7556900";
+  ex:speaks "English" .
+
+ex:Accra a ex:City;
+  geo:hasGeometry "POINT(5.55602 -0.1969)";
+  ex:population "1963264";
+  ex:speaks "English" .
+
+ex:Conakry a ex:City;
+  geo:hasGeometry "POINT(9.53795 -13.67729)";
+  ex:population "1767200" .
+
+ex:Camayenne a ex:City;
+  geo:hasGeometry "POINT(9.535 -13.68778)";
+  ex:population "1871242" .
+
+ex:Kowloon a ex:City;
+  geo:hasGeometry "POINT(22.31667 114.18333)";
+  ex:population "2019533" .
+
+ex:Hong%20Kong a ex:City;
+  geo:hasGeometry "POINT(22.27832 114.17469)";
+  ex:population "7012738";
+  ex:speaks "Standard Chinese" .
+
+ex:Budapest a ex:City;
+  geo:hasGeometry "POINT(47.49835 19.04045)";
+  ex:population "1741041";
+  ex:speaks "Hungarian" .
+
+ex:Medan a ex:City;
+  geo:hasGeometry "POINT(3.58333 98.66667)";
+  ex:population "1750971" .
+
+ex:Surabaya a ex:City;
+  geo:hasGeometry "POINT(-7.24917 112.75083)";
+  ex:population "2374658" .
+
+ex:Jakarta a ex:City;
+  geo:hasGeometry "POINT(-6.21462 106.84513)";
+  ex:population "8540121";
+  ex:speaks "Indonesian" .
+
+ex:Bekasi a ex:City;
+  geo:hasGeometry "POINT(-6.2349 106.9896)";
+  ex:population "1520119" .
+
+ex:Bandung a ex:City;
+  geo:hasGeometry "POINT(-6.92222 107.60694)";
+  ex:population "1699719";
+  ex:speaks "Indonesian" .
+
+ex:Surat a ex:City;
+  geo:hasGeometry "POINT(21.19594 72.83023)";
+  ex:population "2894504";
+  ex:speaks "Hindi" .
+
+ex:Pune a ex:City;
+  geo:hasGeometry "POINT(18.51957 73.85535)";
+  ex:population "2935744";
+  ex:speaks "Hindi" .
+
+ex:Patna a ex:City;
+  geo:hasGeometry "POINT(25.59408 85.13563)";
+  ex:population "1599920";
+  ex:speaks "Hindi" .
+
+ex:Nagpur a ex:City;
+  geo:hasGeometry "POINT(21.14631 79.08491)";
+  ex:population "2228018";
+  ex:speaks "Marathi" .
+
+ex:Chennai a ex:City;
+  geo:hasGeometry "POINT(13.08784 80.27847)";
+  ex:population "4328063";
+  ex:speaks "Tamil" .
+
+ex:Ludhiana a ex:City;
+  geo:hasGeometry "POINT(30.91204 75.85379)";
+  ex:population "1545368" .
+
+ex:Lucknow a ex:City;
+  geo:hasGeometry "POINT(26.83928 80.92313)";
+  ex:population "2472011";
+  ex:speaks "Hindi" .
+
+ex:Kanpur a ex:City;
+  geo:hasGeometry "POINT(26.46523 80.34975)";
+  ex:population "2823249" .
+
+ex:Jaipur a ex:City;
+  geo:hasGeometry "POINT(26.91962 75.78781)";
+  ex:population "2711758" .
+
+ex:Indore a ex:City;
+  geo:hasGeometry "POINT(22.71792 75.8333)";
+  ex:population "1837041";
+  ex:speaks "Hindi" .
+
+ex:Hyderabad a ex:City;
+  geo:hasGeometry "POINT(17.38405 78.45636)";
+  ex:population "3597816";
+  ex:speaks "Urdu" .
+
+ex:Delhi a ex:City;
+  geo:hasGeometry "POINT(28.65195 77.23149)";
+  ex:population "10927986" .
+
+ex:Kolkata a ex:City;
+  geo:hasGeometry "POINT(22.56263 88.36304)";
+  ex:population "4631392" .
+
+ex:Mumbai a ex:City;
+  geo:hasGeometry "POINT(19.07283 72.88261)";
+  ex:population "12691836" .
+
+ex:Bhopal a ex:City;
+  geo:hasGeometry "POINT(23.25469 77.40289)";
+  ex:population "1599914";
+  ex:speaks "Hindi" .
+
+ex:Bengaluru a ex:City;
+  geo:hasGeometry "POINT(12.97194 77.59369)";
+  ex:population "5104047";
+  ex:speaks "Kannada" .
+
+ex:Ahmedabad a ex:City;
+  geo:hasGeometry "POINT(23.02579 72.58727)";
+  ex:population "3719710" .
+
+ex:Navi%20Mumbai a ex:City;
+  geo:hasGeometry "POINT(19.03681 73.01582)";
+  ex:population "2600000" .
+
+ex:Baghdad a ex:City;
+  geo:hasGeometry "POINT(33.34058 44.40088)";
+  ex:population "7216000" .
+
+ex:Al%20Mawsil%20al%20Jadidah a ex:City;
+  geo:hasGeometry "POINT(36.33271 43.10555)";
+  ex:population "2065597" .
+
+ex:Mosul a ex:City;
+  geo:hasGeometry "POINT(36.335 43.11889)";
+  ex:population "1739800" .
+
+ex:Basrah a ex:City;
+  geo:hasGeometry "POINT(30.50852 47.7804)";
+  ex:population "2600000" .
+
+ex:Al%20Basrah%20al%20Qadimah a ex:City;
+  geo:hasGeometry "POINT(30.50316 47.81507)";
+  ex:population "2015483" .
+
+ex:Tehran a ex:City;
+  geo:hasGeometry "POINT(35.69439 51.42151)";
+  ex:population "7153309";
+  ex:speaks "Persian" .
+
+ex:Mashhad a ex:City;
+  geo:hasGeometry "POINT(36.31559 59.56796)";
+  ex:population "2307177";
+  ex:speaks "Persian" .
+
+ex:Isfahan a ex:City;
+  geo:hasGeometry "POINT(32.65246 51.67462)";
+  ex:population "1547164";
+  ex:speaks "Persian" .
+
+ex:Rome a ex:City;
+  geo:hasGeometry "POINT(41.89193 12.51133)";
+  ex:population "2318895";
+  ex:speaks "Italian" .
+
+ex:Yokohama a ex:City;
+  geo:hasGeometry "POINT(35.43333 139.65)";
+  ex:population "3574443" .
+
+ex:Tokyo a ex:City;
+  geo:hasGeometry "POINT(35.6895 139.69171)";
+  ex:population "8336599" .
+
+ex:Osaka a ex:City;
+  geo:hasGeometry "POINT(34.69374 135.50218)";
+  ex:population "2592413" .
+
+ex:Nagoya a ex:City;
+  geo:hasGeometry "POINT(35.18147 136.90641)";
+  ex:population "2191279" .
+
+ex:Kobe a ex:City;
+  geo:hasGeometry "POINT(34.6913 135.183)";
+  ex:population "1528478" .
+
+ex:Sapporo a ex:City;
+  geo:hasGeometry "POINT(43.06667 141.35)";
+  ex:population "1883027" .
+
+ex:Nairobi a ex:City;
+  geo:hasGeometry "POINT(-1.28333 36.81667)";
+  ex:population "2750547" .
+
+ex:Phnom%20Penh a ex:City;
+  geo:hasGeometry "POINT(11.56245 104.91601)";
+  ex:population "1573544" .
+
+ex:Pyongyang a ex:City;
+  geo:hasGeometry "POINT(39.03385 125.75432)";
+  ex:population "3222000" .
+
+ex:Daegu a ex:City;
+  geo:hasGeometry "POINT(35.87028 128.59111)";
+  ex:population "2566540" .
+
+ex:Seoul a ex:City;
+  geo:hasGeometry "POINT(37.566 126.9784)";
+  ex:population "10349312";
+  ex:speaks "Korean" .
+
+ex:Busan a ex:City;
+  geo:hasGeometry "POINT(35.10168 129.03004)";
+  ex:population "3678555" .
+
+ex:Incheon a ex:City;
+  geo:hasGeometry "POINT(37.45646 126.70515)";
+  ex:population "2628000";
+  ex:speaks "Korean" .
+
+ex:Almaty a ex:City;
+  geo:hasGeometry "POINT(43.25667 76.92861)";
+  ex:population "2000900" .
+
+ex:Beirut a ex:City;
+  geo:hasGeometry "POINT(33.89332 35.50157)";
+  ex:population "1916100" .
+
+ex:Rabat a ex:City;
+  geo:hasGeometry "POINT(34.01325 -6.83255)";
+  ex:population "1655753";
+  ex:speaks "Arabic" .
+
+ex:Casablanca a ex:City;
+  geo:hasGeometry "POINT(33.58831 -7.61138)";
+  ex:population "3144909" .
+
+ex:Yangon a ex:City;
+  geo:hasGeometry "POINT(16.80528 96.15611)";
+  ex:population "4477638" .
+
+ex:Iztapalapa a ex:City;
+  geo:hasGeometry "POINT(19.35529 -99.06224)";
+  ex:population "1815786" .
+
+ex:Ecatepec%20de%20Morelos a ex:City;
+  geo:hasGeometry "POINT(19.60492 -99.06064)";
+  ex:population "1655015" .
+
+ex:Mexico%20City a ex:City;
+  geo:hasGeometry "POINT(19.42847 -99.12766)";
+  ex:population "12294193" .
+
+ex:Lagos a ex:City;
+  geo:hasGeometry "POINT(6.45407 3.39467)";
+  ex:population "9000000";
+  ex:speaks "English" .
+
+ex:Kano a ex:City;
+  geo:hasGeometry "POINT(12.00012 8.51672)";
+  ex:population "3626068" .
+
+ex:Kaduna a ex:City;
+  geo:hasGeometry "POINT(10.52641 7.43879)";
+  ex:population "1582102" .
+
+ex:Ibadan a ex:City;
+  geo:hasGeometry "POINT(7.37756 3.90591)";
+  ex:population "3565108" .
+
+ex:Lima a ex:City;
+  geo:hasGeometry "POINT(-12.04318 -77.02824)";
+  ex:population "7737002" .
+
+ex:Quezon%20City a ex:City;
+  geo:hasGeometry "POINT(14.6488 121.0509)";
+  ex:population "2761720" .
+
+ex:Manila a ex:City;
+  geo:hasGeometry "POINT(14.6042 120.9822)";
+  ex:population "1600000" .
+
+ex:Rawalpindi a ex:City;
+  geo:hasGeometry "POINT(33.59733 73.0479)";
+  ex:population "1743101" .
+
+ex:Lahore a ex:City;
+  geo:hasGeometry "POINT(31.558 74.35071)";
+  ex:population "6310888" .
+
+ex:Karachi a ex:City;
+  geo:hasGeometry "POINT(24.8608 67.0104)";
+  ex:population "11624219";
+  ex:speaks "Urdu" .
+
+ex:Faisalabad a ex:City;
+  geo:hasGeometry "POINT(31.41554 73.08969)";
+  ex:population "2506595" .
+
+ex:Warsaw a ex:City;
+  geo:hasGeometry "POINT(52.22977 21.01178)";
+  ex:population "1702139";
+  ex:speaks "Polish" .
+
+ex:Bucharest a ex:City;
+  geo:hasGeometry "POINT(44.43225 26.10626)";
+  ex:population "1877155" .
+
+ex:Saint%20Petersburg a ex:City;
+  geo:hasGeometry "POINT(59.93863 30.31413)";
+  ex:population "5028000";
+  ex:speaks "Russian" .
+
+ex:Moscow a ex:City;
+  geo:hasGeometry "POINT(55.75222 37.61556)";
+  ex:population "10381222";
+  ex:speaks "Russian" .
+
+ex:Jeddah a ex:City;
+  geo:hasGeometry "POINT(21.49012 39.18624)";
+  ex:population "2867446" .
+
+ex:Riyadh a ex:City;
+  geo:hasGeometry "POINT(24.68773 46.72185)";
+  ex:population "4205961" .
+
+ex:Khartoum a ex:City;
+  geo:hasGeometry "POINT(15.55177 32.53241)";
+  ex:population "1974647" .
+
+ex:Stockholm a ex:City;
+  geo:hasGeometry "POINT(59.32938 18.06871)";
+  ex:population "1515017";
+  ex:speaks "Swedish" .
+
+ex:Singapore a ex:City;
+  geo:hasGeometry "POINT(1.28967 103.85007)";
+  ex:population "3547809";
+  ex:speaks "English" .
+
+ex:Dakar a ex:City;
+  geo:hasGeometry "POINT(14.6937 -17.44406)";
+  ex:population "2476400";
+  ex:speaks "French" .
+
+ex:Mogadishu a ex:City;
+  geo:hasGeometry "POINT(2.03711 45.34375)";
+  ex:population "2587183" .
+
+ex:Aleppo a ex:City;
+  geo:hasGeometry "POINT(36.20124 37.16117)";
+  ex:population "1602264";
+  ex:speaks "Arabic" .
+
+ex:Damascus a ex:City;
+  geo:hasGeometry "POINT(33.5102 36.29128)";
+  ex:population "1569394";
+  ex:speaks "Arabic" .
+
+ex:Bangkok a ex:City;
+  geo:hasGeometry "POINT(13.75398 100.50144)";
+  ex:population "5104476" .
+
+ex:Izmir a ex:City;
+  geo:hasGeometry "POINT(38.41273 27.13838)";
+  ex:population "2500603" .
+
+ex:Ankara a ex:City;
+  geo:hasGeometry "POINT(39.91987 32.85427)";
+  ex:population "3517182";
+  ex:speaks "Turkish" .
+
+ex:Istanbul a ex:City;
+  geo:hasGeometry "POINT(41.01384 28.94966)";
+  ex:population "14804116" .
+
+ex:Taipei a ex:City;
+  geo:hasGeometry "POINT(25.04776 121.53185)";
+  ex:population "7871900";
+  ex:speaks "Standard Taiwanese Mandarin" .
+
+ex:Kaohsiung a ex:City;
+  geo:hasGeometry "POINT(22.61626 120.31333)";
+  ex:population "1519711" .
+
+ex:Dar%20es%20Salaam a ex:City;
+  geo:hasGeometry "POINT(-6.82349 39.26951)";
+  ex:population "2698652" .
+
+ex:Kyiv a ex:City;
+  geo:hasGeometry "POINT(50.45466 30.5238)";
+  ex:population "2797553";
+  ex:speaks "Ukrainian" .
+
+ex:Philadelphia a ex:City;
+  geo:hasGeometry "POINT(39.95233 -75.16379)";
+  ex:population "1567442" .
+
+ex:Houston a ex:City;
+  geo:hasGeometry "POINT(29.76328 -95.36327)";
+  ex:population "2296224" .
+
+ex:Chicago a ex:City;
+  geo:hasGeometry "POINT(41.85003 -87.65005)";
+  ex:population "2720546";
+  ex:speaks "English" .
+
+ex:Brooklyn a ex:City;
+  geo:hasGeometry "POINT(40.6501 -73.94958)";
+  ex:population "2300664" .
+
+ex:New%20York%20City a ex:City;
+  geo:hasGeometry "POINT(40.71427 -74.00597)";
+  ex:population "8175133";
+  ex:speaks "English" .
+
+ex:Queens a ex:City;
+  geo:hasGeometry "POINT(40.68149 -73.83652)";
+  ex:population "2272771" .
+
+ex:Phoenix a ex:City;
+  geo:hasGeometry "POINT(33.44838 -112.07404)";
+  ex:population "1563025";
+  ex:speaks "English" .
+
+ex:Los%20Angeles a ex:City;
+  geo:hasGeometry "POINT(34.05223 -118.24368)";
+  ex:population "3971883" .
+
+ex:Tashkent a ex:City;
+  geo:hasGeometry "POINT(41.26465 69.21627)";
+  ex:population "1978028";
+  ex:speaks "Uzbek" .
+
+ex:Maracay a ex:City;
+  geo:hasGeometry "POINT(10.23535 -67.59113)";
+  ex:population "1754256" .
+
+ex:Maracaibo a ex:City;
+  geo:hasGeometry "POINT(10.66663 -71.61245)";
+  ex:population "2225000" .
+
+ex:Caracas a ex:City;
+  geo:hasGeometry "POINT(10.48801 -66.87919)";
+  ex:population "3000000" .
+
+ex:Ho%20Chi%20Minh%20City a ex:City;
+  geo:hasGeometry "POINT(10.82302 106.62965)";
+  ex:population "3467331" .
+
+ex:Sanaa a ex:City;
+  geo:hasGeometry "POINT(15.35472 44.20667)";
+  ex:population "1937451" .
+
+ex:Soweto a ex:City;
+  geo:hasGeometry "POINT(-26.26781 27.85849)";
+  ex:population "1695047" .
+
+ex:Pretoria a ex:City;
+  geo:hasGeometry "POINT(-25.74486 28.18783)";
+  ex:population "1619438" .
+
+ex:Johannesburg a ex:City;
+  geo:hasGeometry "POINT(-26.20227 28.04363)";
+  ex:population "2026469" .
+
+ex:Durban a ex:City;
+  geo:hasGeometry "POINT(-29.8579 31.0292)";
+  ex:population "3120282" .
+
+ex:Cape%20Town a ex:City;
+  geo:hasGeometry "POINT(-33.92584 18.42322)";
+  ex:population "3433441" .
